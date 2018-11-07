@@ -25,7 +25,7 @@ exports.create = function (api) {
         .filter(function (e, i, a) {
           //filter any repeated mentions
           return a.indexOf(e) !== i
-        }))
+        })
       return content
     }
   }}
