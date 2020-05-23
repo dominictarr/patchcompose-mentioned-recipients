@@ -24,12 +24,9 @@ exports.create = function (api) {
         .concat(api.identity.main())
         .filter(function (e, i, a) {
           //filter any repeated mentions
-          return a.indexOf(e) !== i
+          return a.indexOf(e) === i
         })
       return content
     }
   }}
 }
-
-
-
